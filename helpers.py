@@ -4,10 +4,7 @@ import numpy as np
 from newspaper import Article
 import requests
 import json
-import os
 
-# Constants
-CWD = os.getcwd()
 
 def highlight_article_important(article_contents, important_words):
     """
@@ -113,27 +110,27 @@ def get_wordcloud_mapping(predicted_num):
     """
 
     wordcloud_mapping = [
-        (f'{CWD}/wordcloud-images/wordcloud-arts and entertainment.png', 0),
-        (f'{CWD}/wordcloud-images/wordcloud-automobiles.png', 1),
-        (f'{CWD}/wordcloud-images/wordcloud-business.png', 2),
-        (f'{CWD}/wordcloud-images/wordcloud-climate and environment.png', 3),
-        (f'{CWD}/wordcloud-images/wordcloud-energy.png', 4),
-        (f'{CWD}/wordcloud-images/wordcloud-finance and economics.png', 5),
-        (f'{CWD}/wordcloud-images/wordcloud-food.png', 6),
-        (f'{CWD}/wordcloud-images/wordcloud-global healthcare.png', 7),
-        (f'{CWD}/wordcloud-images/wordcloud-health and wellness.png', 8),
-        (f'{CWD}/wordcloud-images/wordcloud-legal and crimes.png', 9),
-        (f'{CWD}/wordcloud-images/wordcloud-life.png', 10),
-        (f'{CWD}/wordcloud-images/wordcloud-markets and investments.png', 11),
-        (f'{CWD}/wordcloud-images/wordcloud-personal finance.png', 12),
-        (f'{CWD}/wordcloud-images/wordcloud-politics.png', 13),
-        (f'{CWD}/wordcloud-images/wordcloud-real estate.png', 14),
-        (f'{CWD}/wordcloud-images/wordcloud-science and technology.png', 15),
-        (f'{CWD}/wordcloud-images/wordcloud-sports.png', 16),
-        (f'{CWD}/wordcloud-images/wordcloud-travel and transportation.png', 17),
-        (f'{CWD}/wordcloud-images/wordcloud-us.png', 18),
-        (f'{CWD}/wordcloud-images/wordcloud-wealth.png', 19),
-        (f'{CWD}/wordcloud-images/wordcloud-world.png', 20)
+        ('./wordcloud-images/wordcloud-arts and entertainment.png', 0),
+        ('./wordcloud-images/wordcloud-automobiles.png', 1),
+        ('./wordcloud-images/wordcloud-business.png', 2),
+        ('./wordcloud-images/wordcloud-climate and environment.png', 3),
+        ('./wordcloud-images/wordcloud-energy.png', 4),
+        ('./wordcloud-images/wordcloud-finance and economics.png', 5),
+        ('./wordcloud-images/wordcloud-food.png', 6),
+        ('./wordcloud-images/wordcloud-global healthcare.png', 7),
+        ('./wordcloud-images/wordcloud-health and wellness.png', 8),
+        ('./wordcloud-images/wordcloud-legal and crimes.png', 9),
+        ('./wordcloud-images/wordcloud-life.png', 10),
+        ('./wordcloud-images/wordcloud-markets and investments.png', 11),
+        ('./wordcloud-images/wordcloud-personal finance.png', 12),
+        ('./wordcloud-images/wordcloud-politics.png', 13),
+        ('./wordcloud-images/wordcloud-real estate.png', 14),
+        ('./wordcloud-images/wordcloud-science and technology.png', 15),
+        ('./wordcloud-images/wordcloud-sports.png', 16),
+        ('./wordcloud-images/wordcloud-travel and transportation.png', 17),
+        ('./wordcloud-images/wordcloud-us.png', 18),
+        ('./wordcloud-images/wordcloud-wealth.png', 19),
+        ('./wordcloud-images/wordcloud-world.png', 20)
     ]
 
     # Now, get the actual wordcloud from the mapping
